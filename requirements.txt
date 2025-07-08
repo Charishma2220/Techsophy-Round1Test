@@ -1,0 +1,8 @@
+psutil
+prophet
+pandas
+numpy
+scikit-learn
+streamlit
+kubernetes
+pyyaml
