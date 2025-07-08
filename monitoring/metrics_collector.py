@@ -3,9 +3,9 @@ import time
 from datetime import datetime
 
 def get_metrics():
-    cpu = random.randint(40, 95)
+    cpu = random.randint(40, 105)
     memory = random.randint(50, 90)
-    rps = random.randint(100, 600)
+    rps = random.randint(100, 650)
     latency = random.randint(100, 500)
 
     return {
@@ -16,7 +16,7 @@ def get_metrics():
         'latency': latency
     }
 
-def stream_metrics(duration_secs=60, to_csv=False):
+def stream_metrics(duration_secs=70, to_csv=False):
     print("Streaming simulated metrics:\n")
     records = []
     for _ in range(duration_secs):

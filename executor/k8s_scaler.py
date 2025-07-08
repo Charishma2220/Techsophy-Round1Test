@@ -5,8 +5,8 @@ import pandas as pd
 LOG_FILE = "scaling_history.csv"
 
 def log_action(action):
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    entry = {"timestamp": now, "action": action}
+    current = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    entry = {"timestamp": current, "action": action}
     if not os.path.exists(LOG_FILE):
         df = pd.DataFrame([entry])
     else:

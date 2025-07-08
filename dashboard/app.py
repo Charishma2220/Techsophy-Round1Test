@@ -16,7 +16,6 @@ from executor.k8s_scaler import execute_scaling
 st.set_page_config(page_title="Smart Auto-Scaler", layout="wide")
 st.title("🚀 Smart Auto-Scaling Dashboard")
 
-# Empty container to refresh the display
 placeholder = st.empty()
 
 while True:

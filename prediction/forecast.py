@@ -12,8 +12,8 @@ def forecast_load(latest_metrics):
     # Generate pseudo-random CPU pattern
     for i in range(30):
         ts = now - timedelta(minutes=30 - i)
-        y = base + random.uniform(-10, 10)  # add some noise
-        y = max(0, min(y, 100))  # keep between 0-100
+        y = base + random.uniform(-10, 10)
+        y = max(0, min(y, 100)) 
         data.append({'ds': ts, 'y': y})
 
     df = pd.DataFrame(data)
